@@ -28,7 +28,7 @@ COPY entrypoint.sh .
 COPY database.py /watcher/database.py
 
 # Copy VSItoPNG tools (fixed path)
-# COPY VSItoPNG /watcher/VSItoPNG
+COPY VSItoPNG /watcher/VSItoPNG
 
 # Ensure execution permissions for scripts
 RUN chmod +x /watcher/VSItoPNG/convert_vsi_to_png.sh \
